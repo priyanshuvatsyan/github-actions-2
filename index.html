@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive CI/CD Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        #updates {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            min-height: 50px;
+            width: 300px;
+            margin: auto;
+            background: #f9f9f9;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello, CI/CD!</h1>
+    <p>Share what’s happening right now:</p>
+    
+    <input type="text" id="userInput" placeholder="Type an update..." />
+    <button onclick="addUpdate()">Submit</button>
+
+    <h2>Live Updates:</h2>
+    <div id="updates"></div>
+
+    <script>
+        function addUpdate() {
+            const input = document.getElementById("userInput");
+            const updatesDiv = document.getElementById("updates");
+
+            if (input.value.trim() !== "") {
+                const newUpdate = document.createElement("p");
+                newUpdate.textContent = input.value;
+                updatesDiv.appendChild(newUpdate);
+                input.value = ""; // Clear input after submission
+            }
+        }
+    </script>
+
+</body>
+</html>

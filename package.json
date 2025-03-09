@@ -1,0 +1,21 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "test": "echo \"No tests yet\""
+}
+,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyanshuvatsyan/github-actions-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/priyanshuvatsyan/github-actions-2/issues"
+  },
+  "homepage": "https://github.com/priyanshuvatsyan/github-actions-2#readme"
+}
